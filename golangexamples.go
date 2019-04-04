@@ -1,8 +1,6 @@
-package main
+package greetings
 
 import (
-	"fmt"
-
 	"github.com/ehteshamz/greetings"
 )
 
@@ -29,26 +27,27 @@ func Encrypt(sliceToEncrypt []byte, ceaserCount int) {
 func EZGreetings(name string) string {
 	return greetings.PrintGreetings(name)
 }
-func main() {
-	//var Slice []byte
-	Slice := make([]byte, 9)
-	Slice[0] = 'J'
-	Slice[1] = 'a'
-	Slice[2] = 'i'
-	Slice[3] = 'K'
-	Slice[4] = 'i'
-	Slice[5] = 's'
-	Slice[6] = 'h'
-	Slice[7] = 'a'
-	Slice[8] = 'n'
 
-	//Q1
-	fmt.Println(ConcatSlice(Slice))
-
-	//Q2
-	Encrypt(Slice, 1)
-	fmt.Println(string(Slice))
-
-	//Q3
-	fmt.Printf(EZGreetings("Jai Kishan"))
-}
+// func main() {
+// 	//var Slice []byte
+// 	Slice := make([]byte, 9)
+// 	Slice[0] = 'J'
+// 	Slice[1] = 'a'
+// 	Slice[2] = 'i'
+// 	Slice[3] = 'K'
+// 	Slice[4] = 'i'
+// 	Slice[5] = 's'
+// 	Slice[6] = 'h'
+// 	Slice[7] = 'a'
+// 	Slice[8] = 'n'
+//
+// 	//Q1
+// 	fmt.Println(ConcatSlice(Slice))
+//
+// 	//Q2
+// 	Encrypt(Slice, 1)
+// 	fmt.Println(string(Slice))
+//
+// 	//Q3
+// 	fmt.Printf(EZGreetings("Jai Kishan"))
+// }
