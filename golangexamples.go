@@ -1,4 +1,4 @@
-package greetings
+package golangexamples
 
 import (
 	"github.com/ehteshamz/greetings"
